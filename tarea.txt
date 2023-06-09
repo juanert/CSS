@@ -1,0 +1,6 @@
+Crea un archivo HTML y CSS
+que simula una fila de 4 videos al estilo
+de Youtube.
+
+Para este ejercicio utiliza GRID, y utiliza
+flex
