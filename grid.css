@@ -1,0 +1,25 @@
+.cuadrilla{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: center;
+}
+
+.cuadrilla img {
+  width: 100%;
+}
+
+.articulo{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+  justify-items: center;
+}
+
+.articulo .columna_izq{
+  background-color: cadetblue;
+}
+
+.articulo .columna_der{
+  background-color: burlywood;
+}

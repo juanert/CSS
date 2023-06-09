@@ -1,0 +1,143 @@
+/* Estilos en archivo */
+/*
+  Las variables son cajas que contienen información
+  y que se pueden reutilizar
+*/
+:root {
+  --main-color: red;
+  --title-size: 42px;
+}
+
+
+/* Estilos en archivo */
+* {
+  color: rgb(39, 76, 139);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+  background-color: #0b0bff;
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+div p.subtitulos, h1.subtitulos{
+  color: var(--main-color);
+  background-color: purple;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 25px 0;
+  padding: 25px 10px 35px 50px;
+  text-align: right;
+  /*
+    text-decoration: line-through red double 5px;
+  */
+  text-decoration-line: line-through;
+  text-decoration-color: green;
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;
+  text-transform: capitalize;
+  /*
+  width: 50%;
+  height: 50%;
+  */
+  /*
+  vw = viewport width (anchura del navegador)
+  vh = viewport height (altura del navegador)
+  width: 50vw;
+  height: 50vh;
+  */
+  width: 30rem;
+  height: 30rem;
+}
+
+#parrafoEspecial {
+  color: royalblue;
+  background-color: green;
+}
+
+.color-rojo {
+  color: var(--main-color);
+}
+
+.texto-grande{
+  font-size: var(--title-size);
+}
+
+.borde-rojo{
+  /*border: 1px var(--main-color) solid;*/
+  border-style:groove;
+  /*border-width: 20px 10px;*/
+  border-width: 10px 5px 20px 15px;
+  border-color: var(--main-color);
+  border-radius: 50px;
+  box-shadow: 5px -10px #888888;
+}
+
+.parrafo{
+  color: green;
+  text-indent: 50px;
+  letter-spacing: 0;
+  line-height: auto;
+  word-spacing: 5px;
+  text-shadow: 2px 2px 5px red;
+}
+
+p {
+  display: block;
+  color: burlywood;
+  background-image: linear-gradient(to left, red, rgb(235, 102, 14) , yellow);
+}
+
+button{
+  background-color: red;
+}
+
+/*PSEUDO CLASES*/
+
+button:hover {
+  background-color:green;
+  width: 300px;
+}
+
+a:visited {
+  color: red;
+}
+
+a:active {
+ color: green;
+}
+
+a:link {
+  color: blue;
+}
+
+input:focus {
+  background-color: red;
+}
+
+/*Pseudo Elementos*/
+
+p::first-letter {
+  font-size: 32px;
+  color: violet;
+}
+
+p::first-line {
+  font-size: 22px;
+  color: teal;
+}
+
+p::after {
+  content: "Hola Mundo";
+}
+
+p::before {
+  content: "Otro mensaje";
+}
+
+div{
+  background-image: url("https://www.nationalgeographic.com.es/medio/2022/12/12/perro-1_514aad3b_221212161023_1280x720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
