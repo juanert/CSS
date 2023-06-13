@@ -1,0 +1,36 @@
+.boton{
+  background-color: rgb(42, 98, 203);
+  color: white;
+  font-weight: 800;
+  font-size: 36px;
+  padding: 2px 16px;
+  border-radius: 36px;
+  cursor: pointer;
+  width: 50%;
+  transition: background-color 1s ease 0.1s, width 1s ease;
+}
+
+.boton:hover {
+  background-color: crimson;
+  width: 100%;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: movimiento 10s ease infinite;
+}
+
+@keyframes movimiento {
+  0% {background-color: red; left: 0; top: 0;}
+  25% {background-color: yellow; left: 200px; top: 0;}
+  50% {background-color: blue; left: 200px; top: 200px;}
+  75% {background-color: green; left: 0; top: 200px;}
+  100% {background-color: red; left: 0; top: 0;}
+}
+
+body{
+  height: 100vh;
+}

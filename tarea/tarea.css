@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+}
+
+#videos{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fila {
+  display: grid;
+  grid-template-columns: repeat(4,320px);
+  width: 100vw;
+  gap: 35px;
+  justify-content: center
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.columna img {
+  width: 320px;
+  border-radius: 8px;
+}
+
+.perfil img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+}
+
+.texto{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.texto h2 {
+  font-size: 16px;
+}
+
+.texto p {
+  color: #AAAAAA;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
